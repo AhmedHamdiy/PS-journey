@@ -1,0 +1,46 @@
+#include<iostream>
+#include<cmath>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+	int rows, cols, q;
+	char arr[100][100];
+	cin >> rows >> cols >> q;
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			arr[i][j] = '.';
+		}
+		
+	}
+	while (q--)
+	{
+		int c1, c2, r1, r2;
+		char c;
+		cin >> r1 >> c1 >> r2 >> c2 >> c;
+		int Rmax = max(r1, r2);
+		int Rmin = min(r1, r2);
+		int Cmax = max(c1, c2);
+		int Cmin = min(c1, c2);
+
+		for (int i = Rmin -1; i < Rmax; i++)
+		{
+			for (int j = Cmin -1; j < Cmax; j++)
+			{
+				arr[i][j] = c;
+			}
+		}
+	}
+	for (int i = 0; i < rows; i++)
+	{ if (i!=0)
+		cout << endl;
+		for (int j = 0; j < cols; j++)
+		{
+			cout << arr[i][j];
+		}
+	}
+	return 0;
+}

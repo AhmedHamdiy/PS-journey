@@ -1,3 +1,3 @@
-🌟 #Join me on my journey to master Problem Solving! 🌟
+🌟 # Join me on my journey to master Problem Solving! 🌟
 
-📈 ##Number of solved problems: 11
+📈 ## Number of solved problems: 11

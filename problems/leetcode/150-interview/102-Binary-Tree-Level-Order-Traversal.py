@@ -21,11 +21,7 @@ class Solution:
                     q.append(x.left)
                 if x.right:
                     q.append(x.right)
-            if (i^1):
-                ans.append(v.reverse())
-            else:
                 ans.append(v)
-            i=+1
             
         ans[0]=[root.val]
         return ans

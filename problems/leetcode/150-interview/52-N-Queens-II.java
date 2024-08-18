@@ -1,5 +1,3 @@
-// Approach - 2
-
 class Solution {
     public int totalNQueens(int n) {
         char[][] board = new char[n][n];
